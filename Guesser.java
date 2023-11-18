@@ -33,12 +33,12 @@ public Guesser(int low,int high) {
    * in the method body, you call first the
    * rules() method, next the doGuesses() method.
    */
-  public void start(){
+  public void start() {
     rules();
     doGuesses();
   }
 
-  private void rules(){
+  private void rules() {
     System.out.println("Think of a number between " +
                        low + " and "  + high);
     System.out.println("I'm going to ask a few questions in order " +
@@ -66,15 +66,17 @@ public Guesser(int low,int high) {
        reply = scanner.nextLine().toUpperCase(); }
     while (!(reply.equals("T") || reply.equals("F")));
 
-    scanner.close();
+    
 
     return reply;
   }
 
-  private void doGuesses(){ int i=0; // number of guesses int middle=0; while(low<high){
-      // Set next guess to the middle between
-      // current low and current high
-      middle=low + (high-low)/2;
+  private void doGuesses(){ 
+      int i=0;
+      int middle;
+
+while (low < high) {
+      middle = low + (high - low) / 2;
 
       System.out.println("Is the number less than or equal to " +
                          middle + "?");
@@ -102,3 +104,4 @@ public Guesser(int low,int high) {
                        " guesses)");
   }
 
+}
