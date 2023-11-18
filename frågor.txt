@@ -1,0 +1,29 @@
+Frågor:
+
+1, När använder man add respektive commit?
+
+Git add är för att lägga till ändringar i arbetsmappen till staging area.
+Staging area ger dig möjligheten att välja specifikt vilka ändringar du vill commita. Gör saker och ting enklare om du jobbar med flera filer samtidigt.
+
+2, Vad är pull respektiva push?
+
+Git pull hämtar ändringar från fjärrrepositoryn till den lokala arbetskatalogen.
+Git push skickar ändringarna till fjärrrepositoryn från den lokala arbetskatalogen.
+
+3, När använder man log respektive status?
+
+Git log används för att se commit historiken.
+Git status används för att visa de aktuella tillståndet i arbetsmappen
+och staging area samt information om ändringar och tillagda filer.
+
+4,Vad är en Git branch och varför är de viktiga?
+
+En Git-branch är en oberoende linje av utveckling som möjliggör separata arbetsflöden, vilket låter dig testa nya funktioner eller åtgärda buggar utan att påverka huvudkoden. Att ha flera olika grenar gör det möjligt för flera att jobba samtidigt och testa sig fram utan att något försvinner eller går sönder.
+
+
+För VG:
+
+git revert används när du vill rulla tillbaka koden och behålla commit-historiken. Vilket är bra om
+man är flera som jobbar med projektet.
+
+git reset används oftast när du arbetar lokalt och ingen annan delar din branch, och du vill radera historiken.
